@@ -3,9 +3,9 @@ class Employee:
         self.name = name
         self.salary = salary
     
-    def display(self):
+    def send(self):
         print(f"Employee name is {self.name}, Salary is {self.salary}")
 
 emp = Employee("Pradeep", 50000)
 
-emp.display()
+emp.send()
