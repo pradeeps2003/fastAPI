@@ -1,0 +1,93 @@
+Developing APIs for an E-commerce Website
+
+Developing APIs for an e-commerce website using Node.js. The website has four different roles: staff, admin, buyer, and vendors. Each role has specific permissions and functionalities within the system. Here are the details of the required APIs and functionalities for each role
+
+Project Requirements:
+
+1. Database Storage:
+
+Utilize a relational database (eg MySQL., MongoDB) to store information about Admins. Users, Vendors, staff and Product informations,
+
+2. User Authentication:
+
+Implement user authentication with roles (e.g.. admin, staff) to control access.
+
+3. CRUD Operations:
+
+-Signup & Login: buyers and vendors should be able to sign up for an account and log in to access the system. Storing sensitive details must be hashed.
+
+Users:
+
+Can sign up for an account.
+
+Vendors: Can sign up for an account.
+
+Staff: Can only be created by the admin
+
+Super-Admin: A default super-admin account must exist in the database with full
+
+access to the system.
+
+1. Admin Role:
+
+Can view all vendor, staff, and user details.
+
+Can create Products.
+
+Products should include:
+
+Product details (name, description, category, etc.).
+
+Products will be from the scheduled start date.
+
+Expiry date (Products expire after 7 days from the scheduled start date)
+
+Free delivery option with the delivery amount if applicable.
+
+Upload the images to the products
+
+Each Products URL must be unique
+
+Old and new prices for products.
+
+2. Staff Role:
+
+- Can view and add Products for assigned vendors.
+
+• Products should have the same details as mentioned for admin-created Products.
+
+3. Vendor Role:
+
+- Can add and view their own Products.
+
+- Products should have the same details as mentioned for admin-created Products.
+
+4.User Role:
+
+- Can view all Products.
+
+-Products should include:
+
+Vendor information for each Product
+
+Expiry time for each Product.
+
+- Discount percentage and amount calculated between the old and new prices (up to two decimal places).
+
+Note:
+
+For the delivery amount and prices (old and new), handle float values without showing more than two decimal places. Do not round up the pointer values.
+
+The discount percentage and amount are calculated but not stored in the database.
+
+Ensure that each Products URL is unique and not duplicated.
+
+Implement proper authentication and authorization mechanisms to ensure that users can only access the functionalities based on their roles and permissions
+
+4. Search and Listing:
+
+Implement search functionality that allows users (admin, staff, vendors, and users) to find Products
+
+The result structure must follow server-side pagination logic.
+
+Note: While submitting the task, you must include a Postman collection containing all the API endpoints and a SQL file for the database schema.    give code and file structure for this details using mongodb and node , expressee for backend developement
